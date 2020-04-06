@@ -1,0 +1,132 @@
+<!-- border: thickness, border type, color of the border
+    
+    for buttons:
+    border-radius: topleft radius, bottomleft radius, topright radius, bottomright radius
+    border-radius: all radius
+    border-radius: 50% (round button)
+
+    box-shadow: x offset, y offset, size, color
+
+
+    note: you cant have a link in a button, buttons just redirect you to another page inside your website
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes</title>
+
+    <!-- <style> here to open css-->
+    <style>
+      body {
+        background-color: #f5f0fe;
+      }
+
+      h1 {
+        color: #885df1;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+      }
+
+      h2 {
+        color: #272044;
+        text-align: center;
+        font-size: 30px;
+      }
+
+      .ApplyNow {
+        display: block;
+        margin: 0 auto;
+
+        font-size: 18px;
+
+        padding: 12px 28px;
+
+        color: #885df1;
+        background-color: #f5f0fe;
+
+        border: 1px, thin, #885df1;
+        border-radius: 30px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      .coders {
+        color: blue;
+      }
+
+      .courses {
+        color: red;
+      }
+
+      .stories {
+        color: green;
+      }
+
+      .MoreInfo {
+        text-align: center;
+      }
+
+      .ImageWoman {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      SheCodes
+    </h1>
+
+    <h2>
+      Coding Workshop
+    </h2>
+
+    <button class="ApplyNow" type="button">Apply Now!</button>
+
+    <ul>
+      <li>
+        <a
+          href=" https://www.shecodes.io/students"
+          target="_blank"
+          class="coders wowanotherclassdifferentfromcoders"
+        >
+          Coders
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.shecodes.io/workshops"
+          target="_blank"
+          class="courses andanotherone"
+        >
+          Courses
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.shecodes.io/stories"
+          target="_blank"
+          class="stories"
+        >
+          Stories
+        </a>
+      </li>
+    </ul>
+
+    <hr />
+
+    <p class="MoreInfo"><strong>More Info</strong></p>
+
+    <img
+      src="https://edge.alluremedia.com.au/m/g/2017/10/woman-coding.jpg"
+      width="300"
+      alt="Woman Coding"
+      class="ImageWoman"
+    />
+  </body>
+</html>

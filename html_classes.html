@@ -1,0 +1,84 @@
+<!-- just type ! + tab to have general configuration
+    change the title!
+    class= - helps categorize elements and style them accordingly in css
+    you can have two or more classes (separated with a single space)
+    to access class in css write .classname
+    to style urls add the class in the <a>
+        
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes</title>
+
+    <!-- <style> here to open css-->
+    <style>
+      h1 {
+        color: blueviolet;
+        text-decoration: underline;
+        font-weight: lighter;
+        font-size: 48px;
+      }
+
+      .coders {
+        color: blue;
+      }
+
+      .courses {
+        color: red;
+      }
+
+      .stories {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      SheCodes
+    </h1>
+
+    <ul>
+      <li>
+        <a
+          href=" https://www.shecodes.io/students"
+          target="_blank"
+          class="coders wowanotherclassdifferentfromcoders"
+        >
+          Coders
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.shecodes.io/workshops"
+          target="_blank"
+          class="courses andanotherone"
+        >
+          Courses
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.shecodes.io/stories"
+          target="_blank"
+          class="stories"
+        >
+          Stories
+        </a>
+      </li>
+    </ul>
+
+    <hr />
+
+    <p><strong>More Info</strong></p>
+
+    <img
+      src="https://edge.alluremedia.com.au/m/g/2017/10/woman-coding.jpg"
+      width="300"
+      alt="Woman Coding"
+    />
+  </body>
+</html>
