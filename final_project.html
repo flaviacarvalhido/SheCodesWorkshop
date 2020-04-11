@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming is AMAZING</title>
+  </head>
+  <style>
+    body {
+      background-image: url(https://storage.needpix.com/rsynced_images/computer-programming-background-1461985468sGF.jpg);
+    }
+    .big-writting-box {
+      background-color: cornsilk;
+      display: block;
+      margin: auto;
+      width: 80%;
+      padding: 12px;
+      text-decoration: none;
+    }
+    .question {
+      text-align: center;
+      color: black;
+      font-size: 50px;
+      font-family: monospace;
+    }
+    .presentation {
+      text-align: justify;
+      color: black;
+      font-size: 25px;
+      font-family: monospace;
+      font-weight: lighter;
+      line-height: 30px;
+    }
+    .reasons {
+      list-style: none;
+      font-size: 20px;
+      font-family: monospace;
+      text-align: justify;
+    }
+    .image-description {
+      text-align: center;
+      font-family: monospace;
+    }
+    .image-of-girl {
+      display: block;
+      margin: auto;
+    }
+    .talker {
+      background: center;
+      display: block;
+      margin: auto;
+      padding: 30px;
+      font-family: monospace;
+      border: 1px, thin, black;
+      border-radius: 30px;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    }
+    .talker:hover {
+      background-color: rgb(120, 199, 188);
+      cursor: pointer;
+      font-weight: bolder;
+    }
+  </style>
+  <body>
+    <div class="big-writting-box">
+      <br />
+      <hr />
+      <h1 class="question">
+        Why is programming so amazing?
+      </h1>
+      <hr />
+      <br />
+      <h2 class="presentation">
+        Hey, I'm Flávia! I'm a computer engineering student and programming is
+        my passion!! I'm here to tell you why programming is great for you and
+        why you should give it a shot!!
+      </h2>
+      <br />
+      <ul class="reasons">
+        <li>
+          First of all, you can see
+          <strong
+            >all your projects come to live in your own computer or
+            phone!</strong
+          >
+          That website about your dog? You got it! That app for your coupons?
+          Sure thing! There's code waiting to be written for anything you can
+          imagine!
+        </li>
+        <br />
+        <li>
+          Not convinced? Check out this
+          <a href="https://www.catgifpage.com/" target="_blank"
+            >random website for cat gifs only</a
+          >!
+        </li>
+        <br />
+        <li>
+          Besides that, there are actually many articles that tell you how
+          programming can make you <em>smarter</em> and make your way of
+          thinking <em>evolve</em> into a more logical and efficient process!
+        </li>
+        <br />
+        <li>
+          Still don't believe me? Here's a really long article about
+          <a
+            href="http://people.cs.vt.edu/~kafura/CS6604/Papers/CT-What-And-Why.pdf"
+            target="_blank"
+          >
+            Computational Thinking</a
+          >
+          (it's how we programmers think, sounds
+          <span style="color: blue;">c</span
+          ><span style="color: rgba(255, 196, 0, 0.815);">o</span
+          ><span style="color: green;">o</span
+          ><span style="color: red;">l</span> right?)
+        </li>
+        <br />
+        <li>
+          Also, you can get some $$$ with your amazing coding skills 🙃
+        </li>
+      </ul>
+
+      <br />
+      <br />
+
+      <p class="image-description">
+        (Actual footage of me being surprised at myself while making this
+        website)
+      </p>
+      <img
+        src="https://image.freepik.com/free-photo/front-view-woman-looking-surprised-computer-screen_23-2148434690.jpg"
+        width="400"
+        alt="Woman Surprised at Coding Skills"
+        class="image-of-girl"
+      />
+      <br />
+      <button class="talker">
+        This website can talk to you! Try it out!
+      </button>
+      <br />
+    </div>
+  </body>
+  <script>
+    function talkingWebsite() {
+      let name = prompt(
+        "To talk to you I need to know your name first! I don't talk to strangers!!!"
+      );
+
+      let favorite = prompt(
+        "Hey " + name + "! Are a dog or a cat person?"
+      ).toLowerCase();
+
+      while (favorite !== "dog" && favorite !== "cat") {
+        favorite = prompt("Psst! You need to answer 'dog' or 'cat'!!");
+      }
+
+      let description = document.querySelector(".image-description");
+
+      if (favorite === "cat") {
+        document.querySelector("img").src =
+          "https://media.mnn.com/assets/images/2015/08/google%20cat.jpg.653x0_q80_crop-smart.jpg";
+        description.innerHTML = "";
+        alert("Meow! Check out the website picture!");
+      } else {
+        document.querySelector("img").src =
+          "https://www.publicdomainpictures.net/pictures/180000/velka/dog-using-laptop-computer.jpg";
+        description.innerHTML = "";
+        alert("Woof! Check out the website picture!");
+      }
+    }
+    let button = document.querySelector("button");
+    button.addEventListener("click", talkingWebsite);
+  </script>
+</html>
